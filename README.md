@@ -10,7 +10,7 @@ scanning.
 > scanning with the python-nmap library.
 >
 > **Scope:** Isolated Hyper-V lab (Kali, Windows Server 2016, WordPress) on the
-> `10.10.10.0/8` network. Every action was against training VMs I was authorised
+> `10.10.10.0/24` network. Every action was against training VMs I was authorised
 > to attack.
 
 ## What this project demonstrates
@@ -37,7 +37,7 @@ scanning.
 
 ## 1. Lab setup & connectivity
 
-Configured the Kali attacker's IPv4 settings to join the `10.10.10.0/8` network.
+Configured the Kali attacker's IPv4 settings to join the `10.10.10.0/24` network.
 The initial ping to the Windows server failed; checking the Windows Defender
 Firewall showed ICMP echo requests were blocked. After enabling the inbound ICMP
 rule, ping succeeded and the WordPress site loaded in the browser.
